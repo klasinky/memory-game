@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/klasinky/memory-game/static/css/main.ce675287.css",
+    "main.js": "/klasinky/memory-game/static/js/main.8afea122.js",
+    "index.html": "/klasinky/memory-game/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.ce675287.css",
+    "static/js/main.8afea122.js"
+  ]
+}
