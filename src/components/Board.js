@@ -59,8 +59,8 @@ const Board = () => {
     if (finished) {
         return (
             <div className="App">
-                <h1>You win!</h1>
-                <ScoreBoard attempts={attempts} points={points} />
+                <ScoreBoard showButton={false} attempts={attempts} points={points} />
+                <h1 className='text-success'>You win!</h1>
                 <button onClick={() => resetGame()} className='button'>Restart</button>
             </div>
         );
@@ -68,16 +68,20 @@ const Board = () => {
 
     return (
 
-        <div className="App">
-            <div className='wrapper_score_board'>
-                <ScoreBoard attempts={attempts} points={points}></ScoreBoard>
+        <div >
+            <ScoreBoard attempts={attempts} points={points} onHandleClick={() => resetGame()}></ScoreBoard>
+            <div className="wrapper_board">
+                <div className="board">
+                    {cards.map((card, index) => {
+                        return (
+                            <Card card={card} onHandleClick={card => handleClick(card)} key={index} />
+                        );
+                    })}
+                </div>
             </div>
-            <div className="board">
-                {cards.map((card, index) => {
-                    return (
-                        <Card card={card} onHandleClick={card => handleClick(card)} key={index} />
-                    );
-                })}
+            <div className='wrapper_button'>
+            <button onClick={() => resetGame()} className='button'>Restart</button>
+
             </div>
         </div>
     )
