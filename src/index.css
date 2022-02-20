@@ -207,10 +207,15 @@ body {
   .score_board{
     font-size: 0.7rem;
   }
+  .card{
+    min-width: 71px;
+    min-height: 100px;
+    max-width: 100%;
+  }
 
   .flipped .card-front img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 15px auto;
   }
   .score_button{
