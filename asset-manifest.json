@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.cfda7452.css",
-    "main.js": "/memory-game/static/js/main.1ce3527d.js",
+    "main.css": "/memory-game/static/css/main.b4795caf.css",
+    "main.js": "/memory-game/static/js/main.e6d791eb.js",
     "index.html": "/memory-game/index.html"
   },
   "entrypoints": [
-    "static/css/main.cfda7452.css",
-    "static/js/main.1ce3527d.js"
+    "static/css/main.b4795caf.css",
+    "static/js/main.e6d791eb.js"
   ]
 }
