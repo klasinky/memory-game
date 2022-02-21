@@ -192,14 +192,8 @@ body {
 }
 
 @media only screen and (min-width: 1850px) {
-  .board{
-    top: 40%;
-    left: 50%;
-  }
-  .card{
-    width: 150px;
-    height: 150px;
-  }
+
+
   .flipped .card-front img{
     width: 100px;
     height: 100px;
