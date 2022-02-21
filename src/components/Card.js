@@ -18,7 +18,7 @@ function Card({ card, onHandleClick }) {
   return (
     <div onClick={() => handleClick()} className={"card " + (flipped ? "flipped" : "") + (matched?" matched":"")}>
       <div className="card-front">
-        <img src={urlImg} alt={card.fruit} />
+        {flipped?<img src={urlImg} alt={card.fruit} />:""}
       </div>
     </div>
   );

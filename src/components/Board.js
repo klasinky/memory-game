@@ -4,6 +4,7 @@ import { checkEnd } from '../utils/checkEnd';
 import { generateCards } from '../utils/generateCards';
 import Card from './Card';
 import ScoreBoard from './ScoreBoard';
+import Win from './Win';
 
 const Board = () => {
 
@@ -59,9 +60,7 @@ const Board = () => {
     if (finished) {
         return (
             <div className="App">
-                <ScoreBoard showButton={false} attempts={attempts} points={points} />
-                <h1 className='text-success'>You win!</h1>
-                <button onClick={() => resetGame()} className='button'>Restart</button>
+                <Win attempts={attempts} points={points} handleClick={() => resetGame()}></Win>
             </div>
         );
     }
